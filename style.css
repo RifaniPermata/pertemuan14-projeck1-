@@ -1,0 +1,136 @@
+* {			/*memanggil semua class dan id*/
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #fff;
+	color: #fff;
+	font-family: 'Lato','arial',san-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+
+/* class dipake tidak hanya 1*/
+.baris {
+    max-width: 1140px;
+	margin: 0 auto;
+	background-color: #fff;
+	color: #000000;
+  }
+section {
+      padding: 80px 0;
+  }
+
+  /* HEADING*/
+h1{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 240%;
+	text-transform: uppercase;
+	font-weight: 300;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+}
+h2{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 180%;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+
+}
+h2:after{ /* membuat objek baru dih2 dengan content*/ 
+	content: " ";
+	display: block;
+	height: 2px;
+	background-color: #00ff00;
+	width: 100px;
+	margin: 0 auto; /* membuat posisi objek ke tengah*/
+	margin-top: 30px;
+
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/rohis.jpg); 
+	height: 100vh; 
+	background-position: center; 
+	background-size: cover; 
+}
+.logo { 
+	width: 100px;
+	height: auto;
+	float: left;	
+	margin-top: 20px;
+ }
+ .menu {
+ 	float: right;
+ 	list-style: none;
+ 	margin-top: 55px;
+ 	 }
+
+ .menu li {
+ 	display: inline-block; 
+ 	margin:40px;
+ }
+ .menu li a{
+ 	color: #fff;
+ 	text-decoration: none; 
+ 	text-transform: uppercase; 
+ 	padding: 8px 0;
+ 	transition: border-bottom 0,3s; /* membuat transisi pada objek  */
+ 	border-bottom: 2px solid transparent;
+ 	font-size: 90%;
+ }
+ .menu li a:hover {
+ 	border-bottom: 2px solid #00ff00;
+ }
+ .hero-text-box {
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	width: 1140px;
+	transform: translate(-50%, -50%); 
+}
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	border: 1px solid #00ff00;
+	border-radius: 200px; 
+	margin-right: 20px;
+	transition: background-color 0.3s,border 0.3s,color 0.2s;
+
+}
+
+.btn-full{
+	color: #000000;
+	background-color: #00ff00;
+}
+
+.btn-full:hover{
+	background-color: #00CC00;
+	color: #0000ff;
+
+}
+
+.btn-ghost{
+	color: #00ff00;
+}
+
+.btn-ghost:hover{
+	background-color: #00ff00;
+	border:1px solid #00ff00;
+	color: #0000ff;
+}
+/*deskrpsi*/
+.section-deskrip{
+	border: 1px solid;
+}
+.section-deskrip .long{
+	margin-bottom: 30px;
+	
+}
